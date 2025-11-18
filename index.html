@@ -1,39 +1,83 @@
 <!DOCTYPE html>
 <html lang="es-mx">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        main{background-image: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg);}
-        main{color: aliceblue;}
-        footer{color: rgba(165, 97, 42, 0.922);}
+        @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+        main{
+            background-image: url(https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero.jpg);
+        color: white;
+        font-size: 45px;
+        font-family: "PT Serif", serif;
+        font-weight: 400;
+        font-style: italic;
+        text-transform: uppercase;
+        }
+        #p1{
+            color: rgb(134, 92, 6);
+            font-size: 25px;
+            font-weight: bold;
+        }
+        footer p{
+            text-align: center;
+        }
+
+        .txtDelgado{
+            font-size: 35px;
+            font-weight: lighter;
+        }
+
+        .txtGrueso{
+            font-size: 70px;
+            font-weight: bolder;
+        }
+
+        nav{
+            text-align: right;
+            padding-right: 30px;
+            padding-bottom: 20px;
+        }
+
+        nav a{
+            padding-right: 40px;
+            text-decoration: none;
+            color: rgb(6, 56, 6);
+        }
     </style>
 </head>
+
 <body>
     <header>
-        <img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg" alt="Gobierno de la Ciudad de México">
+        <img style="padding: 25px 0px 30px 70px;" src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/assets/images/logo.svg" alt="Gobierno de la Ciudad de México">
         <hr>
         <nav>
-            <a href="https://www.google.com">Residentes</a>
-            <a href="https://www.google.com">Negocios</a>
-            <a href="https://www.google.com">Visitantes</a>
-            <a href="https://www.google.com">Gobierno</a>
+            <p style="text-align:right">
+                <a href="https://www.google.com">Residentes</a>
+                <a href="https://www.google.com">Negocios</a>
+                <a href="https://www.google.com">Visitantes</a>
+                <a href="https://www.google.com">Gobierno</a>
+            </p>
         </nav>
     </header>
+
     <main>
-        <div>
-            <p><img src="https://escuelasdecodigo.cdmx.gob.mx/wp-content/themes/escuelasdecodigo/dist/assets/hero-vector.svg" alt=">">APRENDE A PROGRAMAR</p>
-            <p>EN LAS ESCUELAS</p>
-            <p>DE CÓDIGO</p>
-            <p>DE LA CDMX</p>
+            <div style="padding-top: 60px; padding-bottom: 60px;">
+                <p style="padding-left: 100px;">>APRENDE A PROGRAMAR</p>
+            <p style="padding-left: 300px; display: flex;"><span style="vertical-align: top;" class="txtDelgado">en las</span><span style="vertical-align: top;" class="txtGrueso">escuelas</span></p>
+            <p style="padding-left: 400px;" class="txtGrueso">de código</p>
+            <p style="padding-left: 400px;;" class="txtDelgado">de la cdmx</p>
         </div>
     </main>
-    <footer>  
-        <p style="color: rgba(165, 126, 42, 0.851);">¿Quién se puede inscribir?</p>
-        <p>Cualquier persona que quiera aprender a prógramar código y cuente con 4-8 horas a la semana</p>
-        <p>*Menores de edad deberán entrar a las instalaciones acompañados de un adulto.</p>
+
+    <footer>
+            <p id="p1">¿Quién se puede inscribir?</p>
+            <p style="font-weight: bold;">Cualquier persona que quiera aprender a prógramar código y cuente con 4-8 horas a la semana</p>
+            <p style="font-weight: lighter;">*Menores de edad deberán entrar a las instalaciones acompañados de un adulto.</p>
+        </h1>
     </footer>
 </body>
 </html>
